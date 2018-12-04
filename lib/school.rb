@@ -19,10 +19,12 @@ class School
   
   def sort
    sorted = {}
-   roster.each do |grade, students|
+   roster.map do |grade, students|
      sorted[grade] = students.sort
    end
    sorted
+        binding.pry
+
   end
 
 end
